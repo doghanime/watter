@@ -1,0 +1,61 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    border: 1px dashed blue;
+    border-radius: 20px;
+    margin: 50px;
+}
+
+.game-area {
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+}
+
+#controls {
+    background-color: darkgrey;
+}
+
+#game-info {
+    background-color: darkkhaki;
+}
+
+#game-container {
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* 試管 */
+.tube {
+    width: 50px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 0 0 10px 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    margin-top: 20px;
+    border-top: none;
+    cursor: pointer;
+}
+
+/* 被選中的試管 */
+.tube.selected {
+    border: 3px solid red;
+}
+
+/* 水層 */
+.water {
+    width: 100%;
+    height: 25%;
+}
